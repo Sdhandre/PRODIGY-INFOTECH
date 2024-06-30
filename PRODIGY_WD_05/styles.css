@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scroll bars from appearing */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.backvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav .left-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 50px;
+    /* Adjusted size for smaller screens */
+    margin-right: 10px;
+    /* Reduced margin */
+}
+
+nav .app-name {
+    font-size: 2em;
+    /* Adjusted font size */
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    /* Reduced gap for smaller screens */
+}
+
+.social-media a {
+    color: white;
+    font-size: 2em;
+    /* Adjusted font size */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #4CAF50;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    color: #eb08c5;
+    background-color: rgba(3, 0, 0, 0.512);
+
+    /* Change placeholder color */
+    ::placeholder {
+        color: #ff0707;
+        /* Placeholder color */
+    }
+}
+
+.search-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0eaac953;
+    color: rgb(228, 228, 228);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(246, 240, 240, 0.305);
+    width: 80%;
+    max-width: 800px;
+    margin: 80px auto 20px;
+    /* Adjusted margin */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 42px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.weather-info {
+    flex: 1;
+}
+
+.date-time {
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    flex: 0 0 auto;
+}
+
+.weather-icon img {
+    width: 150px;
+    /* Adjust size as needed */
+    height: 150px;
+    /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.weather-card h2 {
+    font-size: 1.8em;
+    /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+.weather-card .weather-details {
+    margin-top: 10px;
+}
+
+.weather-card .weather-details p {
+    margin-bottom: 5px;
+}
+
+.forecast {
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.weather-details p {
+    margin-bottom: 5px;
+}
+
+#aqi {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.forecast h2 {
+    font-size: 1.4em;
+    /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.forecast-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 0 0 auto;
+    width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-item p {
+    margin: 5px 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1024px) {
+    nav .logo {
+        width: 40px;
+        /* Adjusted size for smaller screens */
+    }
+
+    nav .app-name {
+        font-size: 1.5em;
+        /* Adjusted font size */
+    }
+
+    .social-media a {
+        font-size: 1.5em;
+        /* Adjusted font size */
+    }
+
+    .search-form input[type="text"] {
+        width: 200px;
+        /* Adjusted width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .search-form input[type="text"] {
+        width: 180px;
+        /* Further adjusted width for smaller screens */
+    }
+
+    .search-form button {
+        padding: 8px 16px;
+        /* Adjusted padding for smaller screens */
+        font-size: 14px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .content {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+        max-width: 600px;
+        /* Adjusted max-width for smaller screens */
+        margin-top: 60px;
+        /* Adjusted margin for smaller screens */
+    }
+
+    .weather-card h2 {
+        font-size: 1.6em;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .forecast h2 {
+        font-size: 1.2em;
+        /* Adjusted font size for smaller screens */
+    }
+}
+
+.temperature {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #82c408;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        padding: 5px;
+        /* Further reduced padding for smallest screens */
+    }
+
+    .search-form input[type="text"] {
+        width: 150px;
+        /* Adjusted width for smallest screens */
+    }
+
+    .search-form button {
+        padding: 8px 14px;
+        /* Further reduced padding for smallest screens */
+        font-size: 12px;
+        /* Adjusted font size for smallest screens */
+    }
+
+    .content {
+        width: 95%;
+        /* Adjusted width for smallest screens */
+        max-width: 500px;
+        /* Adjusted max-width for smallest screens */
+        margin-top: 40px;
+        /* Adjusted margin for smallest screens */
+    }
+
+    .weather-card h2 {
+        font-size: 1.4em;
+        /* Adjusted font size for smallest screens */
+    }
+
+    .forecast h2 {
+        font-size: 1em;
+        /* Adjusted font size for smallest screens */
+    }
+}
