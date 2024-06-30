@@ -1,0 +1,277 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #8e2de2, #e2029b);
+    /* Gradient background with purplish colors */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: changeBackground 20s linear infinite;
+    /* Animation for background color change */
+}
+
+@keyframes changeBackground {
+    0% {
+        background-position: 0% 50%;
+        /* Start position (left) */
+    }
+
+    100% {
+        background-position: 100% 50%;
+        /* End position (right) */
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Box shadow */
+    width: 320px;
+    /* Adjust width as needed */
+    max-width: 100%;
+    /* Ensure container doesn't exceed screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease;
+    /* Fade-in animation for container */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    /* Adjust cell size */
+    grid-template-rows: repeat(3, 80px);
+    /* Adjust cell size */
+    gap: 5px;
+    border: 2px solid #ccc;
+    /* Light gray border */
+    border-radius: 8px;
+    overflow: hidden;
+    /* Hide overflow to prevent shadows from showing outside */
+    animation: slideIn 1s ease;
+    /* Slide-in animation for game grid */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    /* Light border around cells */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+    /* Added transition properties */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    /* Change background color on hover */
+}
+
+.cell.active {
+    animation: clickAnimation 0.5s ease;
+    /* Click animation */
+}
+
+@keyframes clickAnimation {
+    0% {
+        background-color: #fff;
+        /* Initial background color */
+    }
+
+    50% {
+        background-color: #f0f0f0;
+        /* Intermediate color during animation */
+    }
+
+    100% {
+        background-color: #fff;
+        /* Back to original background color */
+    }
+}
+
+.cell.x {
+    color: red;
+    /* Color for X */
+}
+
+.cell.o {
+    color: blue;
+    /* Color for O */
+}
+/* styles.css */
+
+button {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 15px 20px;
+    /* Padding */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Cursor style */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    margin: 10px;
+    /* Margin around buttons */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+
+.buttons {
+    margin-top: 20px;
+    /* Margin above buttons */
+    display: flex;
+    /* Display buttons in a row */
+    justify-content: center;
+    /* Center buttons horizontally */
+}
+/* styles.css */
+/* styles.css */
+
+#status {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* Fade-in transition */
+}
+
+.result-animate {
+    animation: fadeIn 1s ease forwards;
+    /* Animation for result display */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* styles.css */
+
+/* Existing styles remain unchanged */
+
+.cell.active {
+    animation: clickAnimation 0.5s ease;
+    /* Click animation */
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+        /* Initial scale */
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Scale up */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Back to original scale */
+    }
+}
+
+/* Additional animation for result display */
+.result-animate {
+    animation: fadeIn 1s ease forwards;
+    /* Animation for result display */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.cell.clicked {
+    transform: scale(1.1);
+    /* Slightly scale up on click */
+}
+
+.cell.pulse {
+    animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.cell:click {
+    /* Change selector to ":click" */
+    background-color: #e0e0e0;
+    /* Adjust click color as desired */
+}
