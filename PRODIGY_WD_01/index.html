@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">LaptopStore</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#welcome">Home</a></li>
+                <li class="nav-item"><a href="#laptops">Laptops</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#brands" class="dropbtn">Brands</a>
+                    <div class="dropdown-content">
+                        <a href="#dell">Dell</a>
+                        <a href="#hp">HP</a>
+                        <a href="#apple">Apple</a>
+                        <a href="#lenovo">Lenovo</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#deals">Deals</a></li>
+                <li class="nav-item"><a href="#support">Support</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <form class="search-form">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <!-- Example section structure -->
+        <section id="welcome" class="welcome-section">
+            <div class="welcome-content">
+            <h1>Welcome to LaptopStore</h1>
+            <p class="welcome-text">Find the best laptops at unbeatable prices.</p>
+            <img src="https://m.media-amazon.com/images/G/31/img15/zak/24/dell/laptop-header_1500X300._CB583178952_.png"
+                alt="Home Banner">
+                </div>
+        </section>
+
+        <section id="laptops">
+            <h2>Our Laptops</h2>
+            <div class="laptop-list">
+                <div class="laptop-item">
+                    <img src="https://m.media-amazon.com/images/G/31/Laptops/May24_Smartchoice-Laptops_Updated/SmartC_Kiosk_01._CB556170933_.png"
+                        alt="Laptop 4">
+                    <h3>Laptop Model 4</h3>
+                    <p>$799.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="laptop-item">
+                    <img src="https://m.media-amazon.com/images/G/31/Laptops/May24_Smartchoice-Laptops_Updated/SmartC_Kiosk_02.2._CB556139689_.png"
+                        alt="Laptop 5">
+                    <h3>Laptop Model 5</h3>
+                    <p>$1099.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="laptop-item">
+                    <img src="https://m.media-amazon.com/images/G/31/Laptops/May24_Smartchoice-Laptops_Updated/SmartC_Kiosk_04._CB556170933_.png"
+                        alt="Laptop 6">
+                    <h3>Laptop Model 6</h3>
+                    <p>$1199.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="laptop-item">
+                    <img src="https://m.media-amazon.com/images/G/31/Laptops/May24_Smartchoice-Laptops_Updated/SmartC_Kiosk_01._CB556170933_.png"
+                        alt="Laptop 6">
+                    <h3>Laptop Model 6</h3>
+                    <p>$1199.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands">
+            <h2>Shop by Brands</h2>
+            <div class="brand-list">
+                <div class="brand-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img15/zak/24/dell/popular-series.png"
+                        alt="Dell">
+                    <h3>Dell</h3>
+                    <p>Discover the latest Dell laptops with cutting-edge technology.</p>
+                    <a href="#dell" class="brand-btn">Explore Dell</a>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Laptops_Revamp/PopularSeries_04.png"
+                        alt="HP">
+                    <h3>HP</h3>
+                    <p>High-performance laptops for personal and professional use.</p>
+                    <a href="#hp" class="brand-btn">Explore HP</a>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Laptops_Revamp/PopularSeries_09.png"
+                        alt="Apple">
+                    <h3>Apple</h3>
+                    <p>Experience the power and elegance of Apple laptops.</p>
+                    <a href="#apple" class="brand-btn">Explore Apple</a>
+                </div>
+                <div class="brand-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Laptops_Revamp/PopularSeries_06.png"
+                        alt="Lenovo">
+                    <h3>Lenovo</h3>
+                    <p>Innovative laptops designed for efficiency and productivity.</p>
+                    <a href="#lenovo" class="brand-btn">Explore Lenovo</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="deals">
+            <h2>Special Deals</h2>
+            <div class="deals-list">
+                <div class="deal-item">
+                    <img src="https://m.media-amazon.com/images/G/31/img23/BAU-March26th/Laptops_Refresh/CLP_Premium_26Mar_01._CB560998230_.png"
+                        alt="Deal 1">
+                    <h3>Deal Model 1</h3>
+                    <p>Was $1199.99, Now $999.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="deal-item">
+                    <img src="https://m.media-amazon.com/images/G/31/img23/BAU-March26th/Laptops_Refresh/CLP_Premium_26Mar_02._CB560998230_.png"
+                        alt="Deal 2">
+                    <h3>Deal Model 2</h3>
+                    <p>Was $899.99, Now $699.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="deal-item">
+                    <img src="https://m.media-amazon.com/images/G/31/img23/BAU-March26th/Laptops_Refresh/CLP_Premium_26Mar_08._CB560998230_.png"
+                        alt="Deal 2">
+                    <h3>Deal Model 2</h3>
+                    <p>Was $899.99, Now $699.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="deal-item">
+                    <img src="https://m.media-amazon.com/images/G/31/img23/BAU-March26th/Laptops_Refresh/CLP_Premium_26Mar_07._CB560998230_.png"
+                        alt="Deal 2">
+                    <h3>Deal Model 2</h3>
+                    <p>Was $899.99, Now $699.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Customer Support</h2>
+            <p>We're here to help you with any questions or issues you may have.</p>
+            <h3>FAQs</h3>
+            <div class="faq">
+                <h4>How can I track my order?</h4>
+                <p>You can track your order by logging into your account and checking the order status.</p>
+            </div>
+            <div class="faq">
+                <h4>What is the return policy?</h4>
+                <p>We offer a 30-day return policy on all laptops. For more details, visit our Return Policy page.</p>
+            </div>
+            <h3>Contact Us</h3>
+            <p>If you need further assistance, please contact our support team at support@laptopstore.com or call us at
+                1-800-123-4567.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: contact@laptopstore.com</p>
+                <p>Phone: 1-800-123-4567</p>
+                <p>Address: 123 Laptop St, Tech City, TX</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
